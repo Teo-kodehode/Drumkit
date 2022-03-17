@@ -10,6 +10,9 @@ let tom = new Audio ("sounds/tom.wav")
 let clap = new Audio ("sounds/clap.wav")
 
 
+let kickbtn = document.getElementById("")
+
+
 
 
 body.addEventListener('keydown', (event) => {
@@ -17,53 +20,32 @@ body.addEventListener('keydown', (event) => {
         hiHat.currentTime = 0
         hiHat.play()
     }
-})
-
-body.addEventListener('keydown', (event) => {
-    if (event.key == "w"){
-        tom.currentTime = 0
-        tom.play()
+    if (event.key == " "){
+        kick.currentTime = 0
+        kick.play()
     }
-})
-
-body.addEventListener('keydown', (event) => {
-    if (event.key == "e"){
-        tink.currentTime = 0
-        tink.play()
-    }
-})
-
-body.addEventListener('keydown', (event) => {
-    if (event.key == "r"){
-        ride.currentTime = 0
-        ride.play()
-    }
-})
-
-body.addEventListener('keydown', (event) => {
-    if (event.key == "u"){
-        snare.currentTime = 0
-        snare.play()
-    }
-})
-
-body.addEventListener('keydown', (event) => {
-    if (event.key == "i"){
-        openHat.currentTime = 0
-        openHat.play()
-    }
-})
-
-body.addEventListener('keydown', (event) => {
     if (event.key == "o"){
         clap.currentTime = 0
         clap.play()
     }
-})
-
-body.addEventListener('keydown', (event) => {
-    if (event.key == " "){
-        kick.currentTime = 0
-        kick.play()
+    if (event.key == "i"){
+        openHat.currentTime = 0
+        openHat.play()
+    }
+    if (event.key == "u"){
+        snare.currentTime = 0
+        snare.play()
+    }
+    if (event.key == "r"){
+        ride.currentTime = 0
+        ride.play()
+    }
+    if (event.key == "e"){
+        tink.currentTime = 0
+        tink.play()
+    }
+    if (event.key == "w"){
+        tom.currentTime = 0
+        tom.play()
     }
 })
